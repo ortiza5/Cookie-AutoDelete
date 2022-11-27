@@ -1,6 +1,6 @@
 {
   "background": {
-    "scripts": [
+    "service_workers": [
       "global_files/browserDetect.js",
       "global_files/browser-polyfill.min.js",
       "global_files/redux-webext.js",
@@ -13,7 +13,7 @@
   "homepage_url": "https://github.com/Cookie-AutoDelete/Cookie-AutoDelete",
   "author": "CAD Team",
   "default_locale": "en",
-  "browser_action": {
+  "action": {
     "browser_style": false,
     "default_icon": {
       "48": "icons/icon_48.png"
@@ -38,10 +38,10 @@
     "cookies",
     "notifications",
     "storage",
-    "tabs",
-    "<all_urls>"
+    "tabs"
   ],
-  "manifest_version": 2,
+  "host_permissions": ["<all_urls>"],
+  "manifest_version": 3,
   "name": "__MSG_extensionName__",
   "version": "3.8.0"
 }
